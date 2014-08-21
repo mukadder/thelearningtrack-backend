@@ -15,7 +15,7 @@ public class RESTful {
  
 	@javax.ws.rs.core.Context
 	ServletContext context;
-	
+	//http://localhost:12020/burimsblackboardintegration-backend/rest/getCourses/mkousheh
 	@GET
 	@Path("/{param}")
 	@Produces(MediaType.APPLICATION_JSON)

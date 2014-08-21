@@ -298,7 +298,7 @@ public class SOAPhandler {
 
 	public JSONStudentList getUsersInfoforCourse(String courseID) throws RemoteException{
 
-		/* Katsu's Test on obtaining users in a course from Blackboard */
+		/* Test on obtaining users in a course from Blackboard */
 		/* Create a GetUser object and create a ScodreFilter to find scores by course IDs*/
 		UserFilter userFilter = new UserFilter();
 		userFilter.setFilterType(4);
@@ -349,7 +349,7 @@ public class SOAPhandler {
 
 
 	public List<JSONgrades> getUserGrades(String userID,String courseID) throws RemoteException{
-		/* Katsu's Test on obtaining grades from Blackboard */
+		/* Test on obtaining grades from Blackboard */
 		/* Create a GetGrades object and create a ScoreFilter to find scores by course IDs*/
 		GetGrades getGrades = new GetGrades();
 		ScoreFilter filter = new ScoreFilter();
@@ -395,9 +395,9 @@ public class SOAPhandler {
 		
 		/* Print out the Information from the ScoreVOs */
 		for (ScoreVO scoreVO : scoreVOs) {
-			//grades.add(new JSONgrades(scoreVO.getColumnId(),scoreVO.getGrade(),scoreVO.get))
+			grades.add(new JSONgrades(scoreVO.getColumnId(),0, 0, scoreVO.getGrade()));
 		}
-		return null;
+		return grades;
 	}
 
 

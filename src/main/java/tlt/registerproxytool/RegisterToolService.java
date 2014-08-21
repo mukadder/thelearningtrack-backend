@@ -4,14 +4,7 @@ import java.rmi.RemoteException;
 
 import tlt.WSDLstub.ContextWSStub.RegisterToolResultVO;
 
-/**
- * Specifies the behaviors a class that provides services
- * to enable registering a proxy tool with Blackboard Learn
- * 9.1 web services must implement.
- * Credit : www.brucephillips.name
- * @author Bruce Phillips 
- *
- */
+
 public interface RegisterToolService {
 	
 	/**

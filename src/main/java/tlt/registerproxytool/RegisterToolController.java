@@ -7,15 +7,7 @@ import org.apache.log4j.Logger;
 import tlt.WSDLstub.ContextWSStub.RegisterToolResultVO;
 
 
-/**
- * Acts as a controller to provide interaction 
- * behaviors between a view and a service 
- * that will register a proxy tool with
- * Blackboard.
- * Credit : www.brucephillips.name
- * @author Bruce Phillips 
- *
- */
+
 public class RegisterToolController {
 	
 	private static final Logger logger = Logger.getLogger(RegisterToolController.class.getName() );
